@@ -5,15 +5,146 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>primer_index</title>
+    <title>Diseño de sitios web</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed&display=swap" rel="stylesheet">
 </head>
 
 <body>
-    <h1> Proyecto de sitio Web 2021 - periodo 16-01 </h1>
-    <h3> Ingeniria de sitemas </h3>
-    <p> Nombre : Luisa Fernanda Ramos Romero</p>
-    <br>
-    <p>12 de febrero de 2021 </p>
+    <div id="nav">
+        <ul class="nav-menu">
+            <li><a href="#" class="three-d">
+                Incio
+                <span class="three"><span class="front">Inicio</span><span class="back">Inicio</span></span>
+            </a></li>
+            <li><a href="#" class="three-d">
+                Tema
+                <span class="three"><span class="front">Tema</span><span class="back">Tema</span></span>
+            </a>
+                <ul class="clearfix unstyled drop-menu">
+                    <li><a href="#" class="three-d">
+                        Tema1
+                        <span class="three"><span class="front">Tema1</span><span class="back">Tema1</span></span>
+                    </a></li>
+                    <li><a href="#" class="three-d">
+                        Tema2
+                        <span class="three"><span class="front">Tema2</span><span class="back">Tema2</span></span>
+                    </a></li>
+                </ul>
+            </li>
+            <li><a href="#" class="three-d">
+                Recursos digitales
+                <span class="three"><span class="front">Recursos digitales</span><span class="back"> Recursos digitales</span></span>
+            </a>
+                <ul class="clearfix unstyled drop-menu">
+                    <li><a href="#" class="three-d">
+                    Recuro1
+                    <span class="three"><span class="front">Recurso1</span><span class="back">Recurso1</span></span>
+                </a></li>
+                    <li><a href="#" class="three-d">
+                    Recurso2
+                    <span class="three"><span class="front">Recurso2</span><span class="back">Recurso2</span></span>
+                </a></li>
+                </ul>
+
+            </li>
+            <li><a href="#" class="three-d">
+                Aprendizaje
+                <span class="three"><span class="front">Aprendizaje</span><span class="back">Aprendizaje</span></span>
+            </a>
+                <ul class="clearfix unstyled drop-menu">
+                    <li><a href="#" class="three-d">
+                Actividad1
+                <span class="three"><span class="front">Actividad1</span><span class="back">Actividad1</span></span>
+            </a></li>
+                    <li><a href="#" class="three-d">
+                Actividad2
+                <span class="three"><span class="front">Actividad2</span><span class="back">Actividad2</span></span>
+            </a></li>
+                </ul>
+
+            </li>
+            <li><a href="#" class="three-d">
+                Autor
+                <span class="three"><span class="front">Autor</span><span class="back">Autor</span></span>
+            </a></li>
+
+        </ul>
+    </div>
+    <section class="container">
+        <h3>Etiquetas Básicas de HTML, atributos y valores</h3>
+        <p> HTML este es un lenguaje de marcado estándar para crear páginas web y text markup languaje, describe la estructura de una pagina web, consta de una serie de elementos y estos elementos le dicen al navegador como mostrar el contenido. También estos
+            elementos etiquetan partes de contenido como “esto es un encabezado”, “esto es un párrafo”, “esto es un enlace”, etc. El HTML tiene unos atributos y valores, los atributos proporcionan información adicional sobre los elementos HTML porque
+            todos los elementos HTML pueden tener atributos, estos atributos proporcionan información adicional sobre los elementos, también siempre se especifican en la etiqueta de inicio y generalmente vienen en pares de nombre/valor como:
+            <br>
+            <br> nombre =” valor”, existen atributos como: <br>
+            <br>El atributo href, atributo src, atributo de ancho y alto, atributo alt, atributo de estilo, atributo Lang, atributo de título.
+            <br>
+            <br> Los elementos en HTML tienen atributos; estos son valores adicionales que configuran los elementos o ajustan su comportamiento de diversas formas para cumplir los criterios de los usuarios.
+        </p>
+
+    </section>
+    <article class="article">
+        <h3> información </h3>
+        <p>La pagina web se creo con el fin de mostrar las diferentes actividades, los recursos usados, los aprendizajes y los diferentes temas que usaremos, dentro de ellos se mostraran vídeos, imágenes, con el fin que el usuario pueda sentirse agusto al
+            momento de utilizar nuestra pagina web, estos se publicaran debidamente citados, con su respectivas imágenes que ilustren los diferentes temas que abordaremos dentro del sitio.</p>
+        <br>
+
+
+    </article>
+    <div class="container">
+        <div class="mySlides">
+            <div class="numbertext">1 / 3</div>
+            <img src="img/Page_1.png" style="width:100% ">
+        </div>
+
+        <div class="mySlides ">
+            <div class="numbertext ">2 / 3</div>
+            <img src="img/Page2.png " style="width:100% ">
+        </div>
+
+        <div class="mySlides ">
+            <div class="numbertext ">3 / 3</div>
+            <img src="img/Page_3.png " style="width:100% ">
+        </div>
+
+
+
+        <a class="prev " onclick="plusSlides(-1) ">❮</a>
+        <a class="next " onclick="plusSlides(1) ">❯</a>
+
+        <div class="caption-container ">
+            <p id="caption "></p>
+        </div>
+
+        <div class="row ">
+            <div class="column ">
+                <img class="demo cursor " src="img/Page_1.png" style="width:100% " onclick="currentSlide(1) " alt="The Woods ">
+            </div>
+            <div class="column ">
+                <img class="demo cursor " src="img/Page2.png " style="width:100% " onclick="currentSlide(2) " alt="Cinque Terre ">
+            </div>
+            <div class="column ">
+                <img class="demo cursor " src="img/Page_3.png " style="width:100% " onclick="currentSlide(3) " alt="Mountains and fjords ">
+            </div>
+
+        </div>
+    </div>
+    <script src="js/scripts.js "></script>
+
+
+    <footer>
+        <br>
+        <p> &copy; Todos los derechos reservados - LC + MARZO/2021 COL </p>
+        <p> Diseñado por mi</p>
+
+        <p>DISEÑO DE SITIOS WEB</p>
+        <p>GRUPO : 301122_32</p>
+        <p>SKYPE : Luisa Ramos Romero</p>
+        <p>CORREO: lidaesth@gmail.com</p>
+        <P>AUTORES: luisa fernando ramos romero</P>
+    </footer>
+
 </body>
 
 </html>
